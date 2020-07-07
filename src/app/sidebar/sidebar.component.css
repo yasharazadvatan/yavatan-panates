@@ -1,9 +1,0 @@
-.abs-container{
-    position: absolute;
-    width:calc(100% - 15px);
-    height: 100%;
-    overflow-y: auto;
-}
-.sidebar-items{
-    padding: 10px 0;
-}

@@ -1,7 +1,41 @@
 img {
     width: 100%;
 }
-.reviews-container{
+
+.reviews-container {
     padding: 15px;
     border-bottom: 1px solid #dbdbdb;
+}
+
+.abs-container {
+    position: absolute;
+    width: calc(100% - 15px);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar-items {
+    padding: 10px 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.ctm-min-height {
+    min-height: calc(100vh - 60px);
+}
+
+.home-list {
+    text-decoration: none;
+}
+
+.amanities-items {
+    padding: 5px 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.host-picture {
+    border-radius: 50%;
+    width: 100px;
 }

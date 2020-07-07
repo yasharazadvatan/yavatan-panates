@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { FilterService } from 'src/services/filter.service';
 
 @Component({
   selector: 'app-filter',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filter.component.css']
 })
 export class FilterComponent implements OnInit {
+  filterValue: string;
 
-  constructor() { }
+  constructor(private filterService: FilterService) { }
 
   ngOnInit() {
   }
 
+  onKey(event: any) {
+    this.filterValue = event.target.value;
+    this.filterService.sendFilterItem(this.filterValue);
+  }
 }

@@ -15,7 +15,6 @@ import { FeaturesComponent } from './features/features.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { ContactUsComponent } from './contactUs/contactUs.component';
 import { FilterComponent } from './filter/filter.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
    declarations: [
@@ -26,8 +25,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
       FeaturesComponent,
       PricingComponent,
       ContactUsComponent,
-      FilterComponent,
-      SidebarComponent
+      FilterComponent
    ],
    imports: [
       BrowserModule,
