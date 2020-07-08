@@ -44,7 +44,8 @@ export class HomeComponent implements OnInit {
   }
 
   getItems(): Observable<any> {
-    return this.http.post<any>('http://localhost:3000/api/lists', { startDate: '2016-02-02', endDate: '2020-07-01' });
+    // return this.http.post<any>('http://localhost:3000/api/lists', { startDate: '2016-02-02', endDate: '2020-07-01' });
+    return this.http.post<any>('http://18.220.13.142:3000/api/lists', { startDate: '2016-02-02', endDate: '2020-07-01' });
   }
 
   filteredItem(value: string) {
