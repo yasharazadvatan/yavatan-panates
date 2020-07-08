@@ -2,6 +2,15 @@
   "name": "yavatan-panates",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "start-dev": "node ./server.js"
+  },
   "dependencies": {
     "@angular/animations": "~10.0.2",
     "@angular/common": "~10.0.2",
